@@ -1,0 +1,11 @@
+tienda\login.class
+tienda\registro.class
+tienda\AccesoBD.class
+tienda\logout.class
+tienda\ProductoBD.class
+tienda\Producto.class
+tienda\CancelarPedido.class
+tienda\ProcesarPedido.class
+tienda\ActualizarClave.class
+tienda\Tramitacion.class
+tienda\actualizarPerfil.class

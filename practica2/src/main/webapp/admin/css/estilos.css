@@ -1,0 +1,36 @@
+body .admin-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-principal {
+    width: 140px;
+    text-align: center;
+    background-color: #5b9ee1;
+}
+
+.btn-principal:hover {
+    background-color: #3b6faf;
+}
+
+.producto-img {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury ETSE - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <barra-nav></barra-nav>
+
+    <main class="container mt-5 mb-5">
+        <div class="row gx-5 align-items-stretch">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="mb-4">UBICACIÓN</h3>
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43.98809133970644!2d-0.14370670206713076!3d51.51124353267738!2m3!1f354.8167539267019!2f41.9996658510847!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x487605ff614ef03b%3A0x47a2ec74443edadb!2sJACQUEMUS!5e1!3m2!1ses!2ses!4v1771933022193!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="mb-5">
+                    <h3 class="mb-3">HORARIO DE ATENCIÓN</h3>
+                    <p class="lead">
+                        Lunes a Viernes de 10:00 a 21:30.<br>
+                        Sábados y Domingos de 11:00 a 20:00.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="mb-3">CONSULTAS</h3>
+                    <form action="#" method="post" class="contacto-form">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label">Comentario:</label>
+                            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-metalico w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer-bar></footer-bar>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/cabecera.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>

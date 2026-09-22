@@ -1,0 +1,318 @@
+/* ==========================================================================
+   1. FUENTES Y CONFIGURACIÓN BASE (TU ESTILO METÁLICO)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+
+body {
+    background: linear-gradient(135deg, #2b2b2b 0%, #0a0a0a 100%);
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #b0b0b0;
+    margin: 0;
+    font-size: 18px; /* Tamaño de texto base unificado */
+}
+
+/* Títulos: Tamaño FIJO para que en Empresa y Productos sean iguales */
+h1, h2, h3, .display-3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 55px !important; /* Siempre este tamaño para títulos principales */
+    color: #e6e6e6;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+/* Textos de párrafos unificados */
+p, .lead {
+    font-size: 18px !important;
+    line-height: 1.6;
+    color: #b0b0b0;
+}
+/* ==========================================================================
+   2. BARRA DE NAVEGACIÓN (MENÚ)
+   ========================================================================== */
+.navbar {
+    background: linear-gradient(to bottom, #1a1a1a, #050505) !important;
+    border-bottom: 1px solid #4a4a4a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.9);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav-link {
+    color: #cccccc !important;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================================================
+   3. CARRUSEL FULL WIDTH
+   ========================================================================== */
+#carruselLuxury {
+    width: 100%;
+    margin: 0;
+}
+
+.carousel-inner {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9) !important;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 650px;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   4. BOTONES Y FORMULARIOS
+   ========================================================================== */
+.btn-metalico {
+    display: inline-block;
+    background-color: transparent;
+    color: #e6e6e6;
+    border: 1px solid #b0b0b0;
+    padding: 12px 35px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.btn-metalico:hover {
+    background: #e6e6e6;
+    color: #050505;
+    box-shadow: 0px 0px 15px rgba(230, 230, 230, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Inputs estilo Cristal */
+.contacto-form .form-control {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #e6e6e6 !important;
+    border-radius: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.contacto-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.contacto-form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #b0b0b0 !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   5. PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+footer {
+    background: linear-gradient(to top, #000000, #111111) !important;
+    border-top: 1px solid #333333;
+}
+
+footer h5 { color: #d9d9d9; }
+
+footer a {
+    color: #999999 !important;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   ESTILO PRODUCTO SIMPLE (GALERÍA)
+   ========================================================================== */
+.producto-link {
+    text-decoration: none !important; /* Quita la rayita azul del link */
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.producto-link:hover {
+    opacity: 0.8; /* Efecto sutil al pasar el mouse */
+}
+
+.img-producto-simple {
+    width: 100%;
+    height: 450px; /* Fotos largas como querías */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.precio-simple {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #888888; /* Un gris más suave para el precio */
+    letter-spacing: 2px;
+}
+
+/* Quitamos sombras y bordes de cualquier card si se quedó algo */
+.col-lg-4 h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+/* Estilos para la página de detalle */
+.img-detalle {
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Para que las flechas del carrusel se vean en fondo blanco */
+.black-icon {
+    filter: invert(1);
+}
+
+/* ==========================================================================
+   BOTONES DE TALLA (Letras blancas fijas)
+   ========================================================================== */
+.btn-outline-dark {
+    background-color: #000000 !important; /* Fondo negro siempre */
+    color: #ffffff !important;            /* Letra blanca siempre */
+    border: 1px solid #000000 !important;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    opacity: 0.7;                         /* Un poco transparente si no está elegida */
+}
+
+/* Cuando el tiguere la selecciona */
+.btn-check:checked + .btn-outline-dark {
+    opacity: 1;                           /* Brillo total */
+    border: 1px solid #888888 !important; /* Un borde gris para que sepa cuál marcó */
+    transform: scale(1.1);                /* Se agranda un chin */
+}
+
+/* Efecto al pasar el ratón */
+.btn-outline-dark:hover {
+    opacity: 1;
+    background-color: #333333 !important;
+}
+
+/* Estilo para la imagen en la página de Empresa */
+.img-empresa {
+    height: 600px;
+    object-fit: cover;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* ==========================================================================
+   BOTONES ESPECÍFICOS DEL CARRITO
+   ========================================================================== */
+.producto-img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #444;
+}
+
+.table {
+    color: #b0b0b0 !important;
+    border-color: #333 !important;
+}
+
+.btn-principal, .btn-eliminar, .btn-compra {
+    background-color: transparent;
+    color: #e6e6e6;
+    border: 1px solid #b0b0b0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.btn-principal:hover, .btn-eliminar:hover, .btn-compra:hover {
+    background: #e6e6e6;
+    color: #050505;
+}
+
+.btn-compra {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* Forzar que el input de cantidad se vea bien en fondo oscuro */
+input[type="number"].form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid #444;
+    width: 60px;
+}
+
+/* Estilo para las tablas de usuario y carrito */
+.table-dark-luxury th {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #e6e6e6 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-color: #333 !important;
+}
+
+.table-dark-luxury td {
+    color: #020202 !important;
+    border-color: #333 !important;
+}
+
+.table-dark-luxury th, 
+.table-dark-luxury td {
+    background-color: #ffffff !important; /* Fondo blanco para la tabla */
+    color: #000000 !important;           /* LETRA NEGRA para que se vea */
+    border: 1px solid #dee2e6 !important;
+}
+
+.form-control {
+    background-color: #ffffff !important; /* Fondo blanco del input */
+    color: #000000 !important;           /* LETRA NEGRA al escribir */
+    border: 1px solid #333333 !important;
+}
+
+/* 3. El texto normal de la página (fuera de tablas) sigue siendo claro */
+body, p {
+    color: #b0b0b0; /* El gris suave original */
+}
+
+/* Color azul para los logos de redes sociales */
+.social-icon {
+    font-size: 2rem;           /* Tamaño grande para que se note */
+    color: #00acee !important; /* El color azul de tu imagen */
+    text-decoration: none;
+    transition: 0.3s;          /* Para que el efecto al pasar el mouse sea suave */
+}
+
+/* Efecto cuando el tiguere pasa el ratón por encima */
+.social-icon:hover {
+    color: #ffffff !important; /* Cambia a blanco */
+    transform: scale(1.2);     /* Se agranda un poquito */
+}
+
+/* Centrar las cabeceras de la tabla */
+.table thead th {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
